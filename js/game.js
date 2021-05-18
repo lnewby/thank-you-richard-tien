@@ -881,7 +881,7 @@ function startGame(difficulty = GameStatus.MEDIUM) {
    (  /)(//)/( (/()(/,  (__)()()(/((-/ _) . 
                /               _/           
 `);
-    console.log("Dharmendar Tomar - Engineering Manager @ Google");
+    console.log("Richard Tien - Lead Engineer @ Google");
 
     GameState.STATUS = GameStatus.IN_PROGESS;
     GameState.DIFFICULTY = difficulty;
