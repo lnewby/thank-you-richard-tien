@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146041533-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146041533-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WV8H5F7');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#x1F497;&#x1F499;&#x1F49A;&#x1F49B; Thank you, Googler!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body onload="startGame()">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV8H5F7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <a id="github-fork" href="https://github.com/lnewby/thank-you-globallogic/tree/gh-pages"><img loading="lazy" width="149" height="149" src="img/forkme_right_white_ffffff.png" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    <a id="lance-newby" href="https://lancenewby.com"><img loading="lazy" src="https://s.gravatar.com/avatar/1c94c8d277fc3fc3b5e9cfd9567040be?s=200%27)" alt="Lance Newby's portfolio" data-recalc-dims="1"><span class="full-name">Lance Newby</span></a>
+    
+    <div id="mobile-device-msg" class="hidden">
+        Best experienced in Google Chrome desktop browser!
+    </div>
+
+    </div>
+    <div id="main" class="container">
+        <div class="row">
+            <h1>Thank you, Richard Tien & <span style="color: #4e81e6;">G</span><span style="color:#d04d3d;">o</span><span style="color:#e8b63f;">o</span><span style="color: #4e81e6;">g</span><span style="color: #58a53f;">l</span><span style="color:#d04d3d;">e</span>!</h1>
+        </div>
+
+        <div class="row">
+            <h3 id="brief-msg">As a thank you for supporting me and so many SWE candidates, take a moment... breathe... and enjoy this simple Slider Puzzle made with care just for you.</h3>
+        </div>
+
+        <div class="row">
+            <canvas id="game-canvas" width="540" height="270"></canvas>
+        </div>
+        
+        <div class="row">
+            <div id="game-controls"><p>Use keyboard <strong>&larr; &varr; &rarr;</strong> or click pieces around the <strong>blank</strong> to play!</p></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Need a challenge?</h3>
+                <button id="easy-puzzle">EASY</button>
+                <button id="medium-puzzle" class="medium-puzzle">MEDIUM</button>
+                <button id="hard-puzzle">HARD</button>
+                <button id="googler-puzzle">GOOGLER</button>
+            </div>
+
+            <div class="col">
+                <h3>Need help? Select an algorithm to sort things out.</h3>
+                
+                <button id="selection-btn">SELECTION SORT</button>
+                <button id="insertion-btn">INSERTION SORT</button>
+                <button id="bubble-btn">BUBBLE SORT</button>
+                <button id="merge-btn">MERGESORT</button>
+                <button id="quick-btn">QUICKSORT</button>
+                <button id="heap-btn" class="hidden">HEAPSORT</button>
+                
+            </div>
+
+            <div class="col">
+                <h3>Need to peek at the solution?</h3>
+                <button id="hint-btn">SEE SOLUTION</button>
+            </div>
+        </div>
+        <div id="footer" class="row">
+            <p>Made with &#x1F49A; by <a id="lance-link" href="https://lancenewby.com">Lance Newby</a>!</p>
+        </div>
+    </div>
+    
+    <img id="sprite" src="img/Googler-Richard-Tien.png" style="height:0px; width:0px;">
+    <script src="js/game.js"></script>
+</body>
+</html>
