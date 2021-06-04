@@ -88,7 +88,7 @@ function getInitGrid(rows: number, cols: number, sprite: HTMLImageElement) {
 }
 
 const sliderPuzzle: t_SliderPuzzle = {
-    canvas: document.getElementById("game-canvas"),
+    canvas: document.getElementById("game-canvas") as HTMLCanvasElement,
     gameGrid: [],
     numRows: 0,
     numCols: 0,
@@ -511,7 +511,7 @@ function updateGame() {
 // Event System
 //
 
-function getMousePos(event: any) { // O(1)
+function getMousePos(event: MouseEvent) { // O(1)
     const clientRect = sliderPuzzle.canvas!.getBoundingClientRect();
     return {
         x: event.clientX - clientRect.left,
@@ -725,7 +725,7 @@ function clearSortBtnHighlignt() {
     heapBtn?.classList.remove("selected-sort-btn");
 }
 
-sliderPuzzle.canvas?.addEventListener('mousemove', (event: Event) => {
+sliderPuzzle.canvas?.addEventListener('mousemove', (event: MouseEvent) => {
     const mouse: t_MousePos = getMousePos(event);
 
     sliderPuzzle.gameGrid.forEach((piece: t_Grid) => {
@@ -742,7 +742,7 @@ sliderPuzzle.canvas?.addEventListener('mousemove', (event: Event) => {
     })
 }, false);
 
-sliderPuzzle.canvas?.addEventListener('mousedown', (event: Event) => {
+sliderPuzzle.canvas?.addEventListener('mousedown', (event: MouseEvent) => {
     const mouse: t_MousePos = getMousePos(event);
 
     sliderPuzzle.gameGrid.forEach((piece: t_Grid, index: number) => {

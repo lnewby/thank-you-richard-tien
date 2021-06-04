@@ -22,7 +22,7 @@ export interface t_MatrixDimension {
 };
 
 export interface t_SliderPuzzle {
-    canvas: any;
+    canvas: HTMLCanvasElement;
     gameGrid: t_Grid[];
     numRows: number;
     numCols: number;
